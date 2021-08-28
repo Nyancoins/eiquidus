@@ -185,7 +185,7 @@
         "masternodes_panel": {
           // enabled: Enable/disable the masternode panel (true/false)
           //          If set to false, the masternode panel will be completely inaccessible
-          "enabled": true,
+          "enabled": false,
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
@@ -499,7 +499,7 @@
   "masternodes_page": {
     // enabled: Enable/disable the masternodes page (true/false)
     //          If set to false, the masternodes page will be completely inaccessible
-    "enabled": true,
+    "enabled": false,
     // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
     "show_panels": false,
     // page_header: a collection of settings that pertain to the masternodes page header
@@ -894,7 +894,7 @@
         "getvotelist": {
           // enabled: Enable/disable the /api/getvotelist api endpoint (true/false)
           //          If set to false, the /api/getvotelist api will be completely disabled for public use (no definition on the api page and a disabled error msg if you try to call the endpoint directly)
-          "enabled": true
+          "enabled": false
         },
         // getmasternodecount: a collection of settings that pertain to the /api/getmasternodecount api endpoint
         //                     Returns a json object containing the total number of masternodes on the network (only applicable to masternode coins)
@@ -902,7 +902,7 @@
         "getmasternodecount": {
           // enabled: Enable/disable the /api/getmasternodecount api endpoint (true/false)
           //          If set to false, the /api/getmasternodecount api will be completely disabled for public use (no definition on the api page and a disabled error msg if you try to call the endpoint directly)
-          "enabled": true
+          "enabled": false
         }
       },
       // ext: a collection of settings that pertain to the extended apis that are retrieved from local mongo database collection
@@ -1005,7 +1005,7 @@
         "getmasternodelist": {
           // enabled: Enable/disable the /ext/getmasternodelist api endpoint (true/false)
           //          If set to false, the /ext/getmasternodelist api will be completely disabled for public use (no definition on the api page and a disabled error msg if you try to call the endpoint directly) but the api will still be available internally to the explorer
-          "enabled": true
+          "enabled": false
         },
         // getmasternoderewards: a collection of settings that pertain to the /ext/getmasternoderewards api endpoint
         //                       Returns a list of masternode reward transactions for a specific address that arrived after a specific block height (only applicable to masternode coins)
@@ -1013,7 +1013,7 @@
         "getmasternoderewards": {
           // enabled: Enable/disable the /ext/getmasternoderewards api endpoint (true/false)
           //          If set to false, the /ext/getmasternoderewards api will be completely disabled for public use (no definition on the api page and a disabled error msg if you try to call the endpoint directly)
-          "enabled": true
+          "enabled": false
         },
         // getmasternoderewardstotal: a collection of settings that pertain to the /ext/getmasternoderewardstotal api endpoint
         //                            Returns the total number of coins earned in masternode rewards for a specific address that arrived after a specific block height (only applicable to masternode coins)
@@ -1021,7 +1021,7 @@
         "getmasternoderewardstotal": {
           // enabled: Enable/disable the /ext/getmasternoderewardstotal api endpoint (true/false)
           //          If set to false, the /ext/getmasternoderewardstotal api will be completely disabled for public use (no definition on the api page and a disabled error msg if you try to call the endpoint directly)
-          "enabled": true
+          "enabled": false
         }
       }
     }
@@ -1075,7 +1075,7 @@
     //         HEAVY: retrieved from getsupply rpc cmd (The "blockchain_specific.heavycoin.enabled" setting must be set to true and the "blockchain_specific.heavycoin.api_cmds.getsupply" setting must be set up correctly for this option to work properly)
     //         BALANCES : get the supply by running a query on the addresses collection and summing up all positive balances (potentially a long running query for blockchains with tons of addresses)
     //         TXOUTSET : retrieved from gettxoutsetinfo rpc cmd
-    "supply": "GETINFO"
+    "supply": "COINBASE"
   },
 
   // labels: a collection of settings that pertain to the list of customized wallet address labels
