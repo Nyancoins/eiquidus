@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  equidus:
+    build: '.'
+    ports:
+      - 3001:3001
+    volumes: 
+      - ./settings.json:/app/settings.json
+    depends_on: 
+      - mongodb
+    networks: 
+      - chain
+
+  mongodb:
+    image: mongo:3
+    networks: 
+      - chain
+    volumes:
+      - ./mongodb:/data/db
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=mongoadmin
+      #- MONGO_INITDB_DATABASE=explorerdb
+
+networks:
+  chain:
