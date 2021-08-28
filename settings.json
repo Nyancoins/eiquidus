@@ -24,7 +24,7 @@
   // wallet: a collection of settings that allow the explorer to connect to the coin wallet
   "wallet": {
     // host: The hostname or ip address of the wallet to connect to (default: localhost)
-    "host": "192.168.1.100",
+    "host": "nyancha.in",
     // port: The port # that the wallet is configured to listen for RPC requests on (default: 51573 for Exor wallet)
     "port": 33700,
     // username: The wallet RPC username
@@ -85,9 +85,9 @@
     // theme: Change the look & feel of the explorer with a unique theme. Uses bootswatch themes (https://bootswatch.com)
     //        Valid options: Cerulean, Cosmo, Cyborg, Darkly, Exor, Flatly, Journal, Litera, Lumen, Lux, Materia, Minty, Pulse, Sandstone, Simplex, Sketchy, Slate, Solar, Spacelab, Superhero, United, Yeti
     //        (see /public/css/themes for available themes)
-    "theme": "Exor",
+    "theme": "Cosmo",
     // page_title: The text to display in the HTML title tag and also displayed in the page header when the "shared_pages.page_header.home_link" setting is set to "title"
-    "page_title": "eIquidus",
+    "page_title": "NyanCha.in | Nyancoin Chain Explorer",
     // favicon: The path to an icon file that is displayed in a browser window/tab and serves as branding for your website. Its main purpose is to help visitors locate your page easier when they have multiple tabs open
     //          NOTE: The path root is /
     "favicon": "public/favicon.ico",
@@ -280,7 +280,7 @@
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Github
           "tooltip_text": "Github",
           // url: The exact url that the social link should navigate to
-          "url": "https://github.com/team-exor",
+          "url": "https://github.com/Nyancoins",
           // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
           "fontawesome_class": "fab fa-github",
           // image_path: The path to an image file that will be displayed for this social link
@@ -290,7 +290,7 @@
         {
           // enabled: Enable/disable this particular social link (true/false)
           //          If set to false, the link will be completely inaccessible
-          "enabled": true,
+          "enabled": false,
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Twitter
           "tooltip_text": "Twitter",
           // url: The exact url that the social link should navigate to
@@ -304,7 +304,7 @@
         {
           // enabled: Enable/disable this particular social link (true/false)
           //          If set to false, the link will be completely inaccessible
-          "enabled": true,
+          "enabled": false,
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Discord
           "tooltip_text": "Discord",
           // url: The exact url that the social link should navigate to
@@ -322,7 +322,7 @@
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Telegram
           "tooltip_text": "Telegram",
           // url: The exact url that the social link should navigate to
-          "url": "https://t.me/Exorofficial",
+          "url": "https://t.me/nyancoins",
           // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
           "fontawesome_class": "fab fa-telegram",
           // image_path: The path to an image file that will be displayed for this social link
@@ -332,7 +332,7 @@
         {
           // enabled: Enable/disable this particular social link (true/false)
           //          If set to false, the link will be completely inaccessible
-          "enabled": true,
+          "enabled": false,
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Website
           "tooltip_text": "Website",
           // url: The exact url that the social link should navigate to
