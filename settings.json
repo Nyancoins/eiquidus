@@ -124,7 +124,7 @@
     //             POW: Display the proof-of-work difficulty value
     //             POS: Display the proof-of-stake difficulty value
     //             Hybrid: Display both the proof-of-work and proof-of-stake difficulty values
-    "difficulty": "POS",
+    "difficulty": "POW",
     // show_hashrate: Determine whether to show network hash rate where applicable (true/false)
     //                If set to false, the /api/getnetworkhashps and /ext/getsummary apis will no longer show hash rate information
     "show_hashrate": true,
@@ -175,7 +175,7 @@
         "difficulty_panel": {
           // enabled: Enable/disable the difficulty panel (true/false)
           //          If set to false, the difficulty panel will be completely inaccessible
-          "enabled": false,
+          "enabled": true,
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
@@ -350,7 +350,7 @@
           // tooltip_text: Social link tooltips are always prefixed by the "coin.name" setting followed by the text from this tooltip_text setting. Ex: Exor Coingecko
           "tooltip_text": "Coingecko",
           // url: The exact url that the social link should navigate to
-          "url": "https://www.coingecko.com/en/coins/exor",
+          "url": "https://www.coingecko.com/en/coins/nyan",
           // fontawesome_class: A string of css classes, separated by spaces that can be used to display a fontawesome icon for this social link. See https://fontawesome.com/ for more info
           "fontawesome_class": "",
           // image_path: The path to an image file that will be displayed for this social link
@@ -419,7 +419,7 @@
     // genesis_block: Your coins genesis block hash is used to determine the beginning of the blockchain
     //                For many bitcoin clones you can use the following cmd to get the block hash of the genesis block: coin-cli getblockhash 0
     //                NOTE: If this value is not entered correctly it will not be possible for the explorer to find or navigate to the genesis block, neither via block or transaction hash
-    "genesis_block": "00014f36c648cdbc750f7dd28487a23cd9e0b0f95f5fccc5b5d01367e3f57469"
+    "genesis_block": "b477d9bc0721a1b96547495404583d68123f471fdd1d4058a9adff2fa7452298"
   },
 
   // transaction_page: a collection of settings that pertain to the transaction/tx page
@@ -438,7 +438,7 @@
     // genesis_tx: Your coins genesis transaction hash is used to determine the beginning of the blockchain
     //             For many bitcoin clones you can use the following cmd to find the list of transaction hashes from the genesis block: coin-cli getblock 00014f36c648cdbc750f7dd28487a23cd9e0b0f95f5fccc5b5d01367e3f57469
     //             NOTE: If this value is not entered correctly it will not be possible for the explorer to find or navigate to the genesis block by searching for the genesis transaction hash
-    "genesis_tx": "dd1d332ad2d8d8f49195056d482ae3c96fd2d16e9d166413b27ca7f19775644c",
+    "genesis_tx": "a58c3dc45c902567682edae9a0f89717e917fb9377c4b86ead909b2416110fc6",
     // show_op_return: Determine whether to decode and show OP_RETURN values that may have been embeddeded in a transaction
     //                 NOTE: Enabling this option will require a full reindex of the blockchain data before previously synced transactions can display the OP_RETURN value
     "show_op_return": false
